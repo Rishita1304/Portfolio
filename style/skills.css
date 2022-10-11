@@ -1,0 +1,177 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(23, 21, 21, 0.8), rgba(19, 20, 20, 0.6)), url(img9.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+}
+#btn {
+    margin-top: 2%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right: 0%;
+    margin-left: 5%;
+    background: transparent;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+}
+
+#btn:hover {
+    background:  rgba(16, 187, 249, 0.639);
+    
+}
+.skill-bar {
+    border: 1px solid #fff;
+    width: 80%;
+    max-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 0% 2% 0% 5%;
+    height: 100%;
+    max-height: 500px;
+    background-color: rgba(16, 187, 249, 0.639);
+    left: 50%;
+    top: 55%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.skill-bar .container {
+    padding: 10% 0;
+}
+
+
+h1 {
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15%;
+}
+
+.skill-bar .container .bar .info {
+    margin-top: 3%;
+    color: rgba(255, 242, 238, 0.863);
+}
+
+.skill-bar .container .bar .info span {
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.skill-bar .container .bar .progress-line {
+    margin-top: 16px;
+    position: relative;
+    height: 12px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    background: rgba(255, 242, 238, 0.607);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 1px rgba(90, 69, 69, 0.8);
+    border-radius: 10px;
+    animation: animate 1s forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.skill-bar .container .bar .progress-line span {
+    height: 100%;
+    width: 80%;
+    background: rgb(1, 27, 57);
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s forwards;
+}
+
+.skill-bar .container .bar .progress-line.html span {
+    width: 85%;
+}
+
+.skill-bar .container .bar .progress-line.css span {
+    width: 70%;
+}
+
+.skill-bar .container .bar .progress-line.javascript span {
+    width: 42%;
+}
+
+.skill-bar .container .bar .progress-line.cpp span {
+    width: 60%;
+}
+
+.skill-bar .container .bar .progress-line.python span {
+    width: 30%;
+}
+
+.skill-bar .container .bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0;
+    border-top-color: rgb(1, 27, 57);
+    opacity: 0;
+    animation: text1 0.5s 1s linear forwards;
+}
+
+.skill-bar .container .bar .progress-line span::after {
+    position: absolute;
+    content: "80%";
+    right: 0;
+    top: -25px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255, 242, 238, 0.863);
+    background: rgba(1, 27, 57, 0.792);
+    padding: 2px 5px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: text1 0.4s 1s linear forwards;
+}
+@keyframes text1 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-bar .container .bar .progress-line.html span::after {
+    content: "85%";
+}
+
+.skill-bar .container .bar .progress-line.css span::after {
+    content: "70%";
+}
+
+.skill-bar .container .bar .progress-line.javascript span::after {
+    content: "42%";
+}
+
+.skill-bar .container .bar .progress-line.cpp span::after {
+    content: "60%";
+}
+
+.skill-bar .container .bar .progress-line.python span::after {
+    content: "30%";
+}
+@media (max-width:700px) {
+    .skill-bar{
+        position: absolute;
+        top: 45%;
+    }
+}

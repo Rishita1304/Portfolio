@@ -1,0 +1,233 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     text-transform: capitalize;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+ }
+.logo{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: aliceblue;
+    padding: 10px 60px;
+    line-height: 80px;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    min-width: 40%;
+    background-color: #253957;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    padding: .5rem;
+    line-height: 70px;
+}
+nav a{
+    color: aliceblue;
+    font-size: 18px;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+a#active,a:hover{
+    border: 1px solid aliceblue;
+    transition: .7s;
+}
+
+nav #icon1{
+    color: aliceblue;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+ .home {
+     display: block;
+     position: absolute;
+     height: 88vh;
+     justify-content: center;
+     text-align: left;
+     width: 100%;
+     flex-flow: column;
+     padding:3rem 13rem;
+     overflow-x: hidden;
+     background-image: linear-gradient(40deg, #0a69f7, #66e6fd, #fff, #66e6fd, #0a69f7);
+     background-size: 400%;
+     animation: h-animate 3s infinite alternate;
+ }
+
+ #clock {
+     margin-top: 6%;
+     font-size: x-large;
+     font-weight: 600;
+     border: 2px #052d6a;
+ }
+
+ .home h1 {
+     font-size: 2rem;
+     margin-bottom: 25px;
+ }
+
+ .home h3 {
+     font-size: 1.5rem;
+     margin-bottom: 20px;
+ }
+
+ @keyframes h-animate {
+     0% {
+         background-position: left;
+     }
+
+     100% {
+         background-position: right;
+     }
+ }
+
+ .btn1 {
+     margin-top: 30px;
+     padding: 10px 20px;
+     border-radius: 10px;
+     margin-right: 0%;
+     background: transparent;
+ }
+
+ .btn1:hover {
+     background: rgba(6, 239, 72, 0.377);
+ }
+
+ .home .row {
+     display: flex;
+     flex-basis: 40%;
+     max-width: 1000px;
+     width: 900px;
+     justify-content: space-between;
+ }
+
+ .home .row .image img {
+     margin-left: 45px;
+     margin-right: 0;
+     opacity: 0.9;
+     border-radius: 50%;
+     border: 4px solid #052d6a;
+ }
+
+ h1.hello span {
+     color: red;
+     font-weight: 700;
+ }
+
+ .typing {
+     color: red;
+     
+ }
+
+ @media (max-width:900px) {
+
+    nav{
+        position: fixed;
+        z-index: 2;
+
+    }
+    nav #icon1{
+        display: block;
+        position:fixed;
+        right: 0;
+        top: 0px;
+    }
+
+    nav ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top:80px;
+        right: -100%;
+        margin-right: 0;
+        text-align: center;
+        transition: all 1s ease;
+    }
+
+    nav ul.show{
+        right: 0;
+        transition: all 1s ease-in;
+    }
+    nav li{
+        display: block;
+        margin: 20px 0;
+
+    }
+    .home{
+        margin-top: 2%;
+    }
+    .home .row{
+        margin-top: 20%;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a#active,a:hover{
+        border: none;
+        color: #3498db;
+    }
+    nav ul.show{
+        left: 0;
+    }
+
+    .home {
+         display: block;
+         padding: 3rem 2rem;
+         height: 140vh;
+         background-size: 200%;
+     }
+
+     .home h1 {
+         font-size: 1.5rem;
+         margin-bottom: 15px;
+     }
+
+     .home h3 {
+         font-size: 1.2rem;
+         margin-bottom: 10px;
+     }
+
+     .home .row {
+         display: block;
+         flex-basis: 20%;
+         max-width: 1000px;
+         padding-top: 10%;
+         width: 400px;
+         height: 80vh;
+     }
+
+     .home .row .me {
+         width: 90%;
+     }
+
+     .home .row .image img {
+         margin: 10% 0 0 0;
+         height: 13rem;
+         border-radius: 50%;
+     }
+
+     .btn1 {
+         margin-top: 30px;
+         padding: 10px 10px;
+         margin-right: 0%;
+     }
+     #clock{
+        margin-top: 30%;
+     }
+
+ }

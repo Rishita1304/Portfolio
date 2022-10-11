@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+body {
+    background-image: linear-gradient(rgba(23, 21, 21, 0.6), rgba(19, 20, 20, 0.6)), url(img3.png);
+    height: 180vh;
+    display: grid;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-transform: capitalize;
+}
+
+.contact .row {
+    display: inline-block;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content {
+    float: left;
+}
+
+.contact .row .content {
+    display: inline-block;
+    margin-top: 1%;
+    width: 50%;
+    font-size: 120%;
+    justify-content: center;
+    align-items: center;
+    padding: 8% 12%;
+    padding-bottom: 0;
+}
+#btn{
+    padding: 2% 5%;
+    margin: 25% 20%;
+    background: rgba(0, 0, 0, 0.6);
+    color: rgba(5, 228, 228, 0.824);
+    text-transform: none;
+    font-size: 100%;
+    width: 30%; 
+}
+#btn:hover{
+    background: rgba(5, 228, 228, 0.824);
+    color: rgb(250, 245, 245);
+
+}
+form {
+    float: right;
+}
+
+.contact .row form {
+    width: 50%;
+    display: inline-block;
+    padding: 6%;
+    margin-top: 0%;
+    top: 0;
+    right: 0;
+    padding-bottom: 0;
+}
+
+.contact .row form .box {
+    padding: 5%;
+    margin: 1rem 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: rgb(139, 139, 139);
+    text-transform: none;
+    font-size: 100%;
+    width: 100%;
+}
+
+h1 {
+    padding: 3%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgba(5, 228, 228, 0.824);
+}
+
+.contact .row .content .info {
+    padding: 10% 15%;
+    font-size: 100%;
+}
+
+
+.fa {
+    margin-right: 10%;
+    color: rgba(5, 228, 228, 0.824);
+}
+
+.contact .row form .btn {
+    padding: 2% 5%;
+    margin: 8% 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-transform: none;
+    font-size: 100%;
+    width: 30%;
+}
+
+
+
+footer {
+    height: 200px;
+}
+
+.follow .icon {
+    margin: 5% 45%;
+    display: flex;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.follow .icon .fab {
+    text-decoration: none;
+    padding: 0 30%;
+    font-size: xx-large;
+}
+
+.follow .icon #fb:hover{
+    color: #0606d2;
+    font-size: xxx-large;
+    transition: all 0.2s ease;
+}
+.follow .icon #tw:hover{
+    color: #1da1f2;
+    font-size: xxx-large;
+    transition: all 0.2s ease;
+}
+.follow .icon #ig:hover{
+    color: #e1306c;
+    font-size: xxx-large;
+    transition: all 0.2s ease;
+}
+.follow .icon #ln:hover{
+    color: #081480;
+    font-size: xxx-large;
+    transition: all 0.2s ease;
+}
+
+
+h2 {
+    margin-top: 2%;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgba(5, 228, 228, 0.824);
+}
+
+.contact .follow {
+    margin-top: 10%;
+}
+
+@media (max-width:900px) {
+    .contact .row .content {
+        margin: 5%;
+        width: 100%;
+    }
+    body{
+        height: 200vh;
+    }
+    .contact .row form {
+        padding-left: 2%;
+        width: 85%;
+    }
+    #fb {
+        margin-top: 35px;
+    }
+    #tw {
+        margin-top: 35px;
+    }
+    #ig {
+        margin-top: 35px;
+    }
+    #ln{
+        margin-top: 35px;
+    }
+}

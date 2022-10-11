@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <section class="header">
+    <div class="user">
+        <nav>
+            <label class="logo">Portfolio</label>
+            <label id="icon1"><i class="fa fa-bars" onclick="showMenu()"></i></label>
+            <ul>
+                <li><a href="#home" id="active" class="fa fa-home"> Home</a></li>
+                <li><a href="about.html" class="fa fa-address-card"> About</a></li>
+                <li><a href="skills.html" class="fa fa-user"> Skills</a></li>
+                <li><a href="contact.html" class="fa fa-phone"> Contact</a></li>
+            </ul>
+        </nav>
+     </div>
+    </section>
+    <section class="home" id="home">
+        <div class="row">
+            <div class="me">
+            <h1>Hi!</h1>
+            <h1 class="hello">I am <span class="name">Rishita Srivastava</span></h1>
+            <h3 class="prof">a <span class="typing">web Developer.</span></h3>
+            <p>A Trainee At Big Data Centre Of Excellence (BDCOE).</p>
+            <br>
+            <p>fresh  and Energetic Web Designer creating and maintaining functional, attractive and responsive websites. Clear understanding of mordern technologies and better design..!!</p>
+        <button onclick="window.print()" class="btn1">Download <i class="fa fa-download"></i></button>
+        </div>
+        <div class="image">
+            <img src="asset/img1.jpg" height="350">
+        </div>    
+        </div>
+        <div id="clock">1</div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
