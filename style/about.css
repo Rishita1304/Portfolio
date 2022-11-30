@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -14,6 +15,66 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+ /* * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     
+     text-transform: capitalize;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+ } */
+.logo{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: aliceblue;
+    padding: 10px 60px;
+    line-height: 80px;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    min-width: 40%;
+    background-color: #253957;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    padding: .5rem;
+    line-height: 70px;
+}
+nav a{
+    color: aliceblue;
+    font-size: 10px;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+a#active,a:hover{
+    border: 1px solid aliceblue;
+    transition: .7s;
+}
+
+
+.fa {
+    font-size: 20px;
+}
+
+nav #icon1{
+    color: aliceblue;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+} 
 
 .maincontent {
     width: 100%;
@@ -76,9 +137,6 @@ body {
     background-size: 200px;
 }
 
-.fa {
-    font-size: 27px;
-}
 
 .card .title {
     width: 100%;
@@ -135,5 +193,38 @@ body {
 
     .maincontent .card {
         margin: 15% 10%;
+    }
+    nav{
+        position: fixed;
+        z-index: 2;
+
+    }
+    nav #icon1{
+        display: block;
+        position:fixed;
+        right: 0;
+        top: 0px;
+    }
+
+    nav ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top:80px;
+        right: -100%;
+        margin-right: 0;
+        text-align: center;
+        transition: all 1s ease;
+    }
+
+    nav ul.show{
+        right: 0;
+        transition: all 1s ease-in;
+    }
+    nav li{
+        display: block;
+        margin: 20px 0;
+
     }
 }

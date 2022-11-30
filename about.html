@@ -7,11 +7,26 @@
     <title>About</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="style/about.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 <body>
-    <div>
+    <section class="header">
+        <div class="user">
+            <nav>
+                <label class="logo">Portfolio</label>
+                <label id="icon1"><i class="fa fa-bars" onclick="showMenu()"></i></label>
+                <ul>
+                    <li><a href="index.html"  class="fa fa-home"> Home</a></li>
+                    <li><a href="#" id="active" class="fa fa-address-card"> About</a></li>
+                    <li><a href="skills.html" class="fa fa-user"> Skills</a></li>
+                    <li><a href="contact.html" class="fa fa-phone"> Contact</a></li>
+                </ul>
+            </nav>
+         </div>
+        </section>
+    <!-- <div>
         <a href="index.html"><button id="btn" class="fa fa-backward"></button></a> 
-    </div>
+    </div> -->
     <section class="maincontent">
         <div class="card">
             <div class="icon"><i class="fa fa-school"></i></div>
